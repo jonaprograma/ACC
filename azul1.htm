@@ -2,6 +2,14 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<script language="javascript" src="cal2.js">
+/*
+Xin's Popup calendar script-  Xin Yang (http://www.yxscripts.com/)
+Script featured on/available at http://www.dynamicdrive.com/
+This notice must stay intact for use
+*/
+</script>
+<script language="javascript" src="cal_conf2.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <title>Untitled Document</title>
 <style type="text/css">
@@ -14,9 +22,97 @@ body {
 	font-size: large;
 }
 -->
-</style></head>
+
+</style>
+
+
+</head>
 
 <body>
-<div id="Layer1" style="position:absolute; left:63px; top:46px; width:2511px; height:2197px; z-index:1"><img src="HUMANO.gif" width="835" height="452"></div>
+<div id="Layer2" style="position:absolute; left:74px; top:20px; width:501px; height:38px; z-index:2">b>
+
+<script>
+
+/*
+RAINBOW TEXT Script by Matt Hedgecoe (c) 2002
+Featured on JavaScript Kit
+For this script, visit http://www.javascriptkit.com
+*/
+
+// ********** MAKE YOUR CHANGES HERE
+
+var text=" EXPLOTA TU MENTE ....." // YOUR TEXT
+var speed=80 // SPEED OF FADE
+
+// ********** LEAVE THE NEXT BIT ALONE!
+
+
+if (document.all||document.getElementById){
+document.write('<span id="highlight">' + text + '</span>')
+var storetext=document.getElementById? document.getElementById("highlight") : document.all.highlight
+}
+else
+document.write(text)
+var hex=new Array("00","14","28","3C","50","64","78","8C","A0","B4","C8","DC","F0")
+var r=1
+var g=1
+var b=1
+var seq=1
+function changetext(){
+rainbow="#"+hex[r]+hex[g]+hex[b]
+storetext.style.color=rainbow
+}
+function change(){
+if (seq==6){
+b--
+if (b==0)
+seq=1
+}
+if (seq==5){
+r++
+if (r==12)
+seq=6
+}
+if (seq==4){
+g--
+if (g==0)
+seq=5
+}
+if (seq==3){
+b++
+if (b==12)
+seq=4
+}
+if (seq==2){
+r--
+if (r==0)
+seq=3
+}
+if (seq==1){
+g++
+if (g==12)
+seq=2
+}
+changetext()
+}
+function starteffect(){
+if (document.all||document.getElementById)
+flash=setInterval("change()",speed)
+}
+starteffect()
+</script>
+</b>
+
+</div>
+<div id="Layer3" style="position:absolute; left:819px; top:44px; width:179px; height:113px; z-index:3"></div>
+<script language="javascript" src="cal2.js">
+/*
+Xin's Popup calendar script-  Xin Yang (http://www.yxscripts.com/)
+Script featured on/available at http://www.dynamicdrive.com/
+This notice must stay intact for use
+*/
+</script>
+<script language="javascript" src="cal_conf2.js"></script>
+<div id="Layer1" style="position:absolute; left:24px; top:74px; width:701px; height:2170px; z-index:1"><img src="HUMANO.gif" width="732" height="452"></div>
 </body>
 </html>
